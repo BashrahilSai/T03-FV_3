@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-weight: bold;
+    font-size: 0.72em;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 70%;
+    margin: 8px auto;
+    border: 1px solid;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.left-form {
+    position: relative;
+}
+
+.left-form img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(68, 134, 101, 0.7), rgba(180, 157, 106, 0.4));
+    position: absolute;
+    font-size: 1.4em;
+    color: white;
+    font-weight: 600;
+}
+
+a {
+    color: #9B9B9B;
+    font-size: 0.8em;
+}
+
+.elem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 50px;
+    padding: 35px 45px;
+}
+
+.left-elem {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.right-elem {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.column-elem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+
+.flex-elem0 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-elem {
+    display: flex;
+    gap: 15px;
+    text-transform: capitalize;
+    padding: 10px 0 8px;
+}
+
+.flex-elem label {
+    position: relative;
+    bottom: 4px;
+}
+
+.bottom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 50px;
+}
+
+input {
+    font-size: 1.2em;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 3px;
+    outline-color: #2db987;
+}
+
+input[type="submit"] {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #2db987;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #2db987;
+    background-color: #fff;
+    color: #D7D7D7;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+    padding: 35px 0;
+}
+
+.donnate {
+    background-color: #D7D7D7;
+    height: 2px;
+    width: 100%;
+    position: relative
+}
+
+.progress {
+    background: #2db987;
+    width: 50%;
+    height: 100%;
+}
+
+span {
+    background-color: #2db987;
+    color: white;
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+i {
+    font-size: 15px;
+    position: absolute;
+    left: 90%;
+    top: 55%;
+}
+
+#l-name {
+    border: 1px solid rgb(158, 15, 15);
+}
+
+#l-name:focus {
+    background: #fff;
+    z-index: 1;
+}
+
+input[type="radio"] {
+    accent-color: green;
+    height: 17px;
+    width: 17px;
+}
+
+@media screen and (max-width: 1135px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5% 95%;
+    }
+
+    .left-form img {
+        display: none;
+    }
+
+    .btn-box {
+        padding: 65px 0;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .elem {
+        grid-template-columns: 1fr;
+       row-gap: 25px;
+    }
+
+    .btn-box {
+        padding-bottom: 90px;
+    }
+
+    i {
+        left: 92%;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    i {
+        left: 90%;
+    }
+
+    input[type="radio"] {
+        height: 13px;
+        width: 13px;
+    }
+}
